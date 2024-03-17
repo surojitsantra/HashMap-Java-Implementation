@@ -1,1 +1,1 @@
-HashMap impelementation from scratch using Java.
+HashMap implementation from scratch using Java.
