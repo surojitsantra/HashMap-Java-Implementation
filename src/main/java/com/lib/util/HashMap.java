@@ -97,8 +97,7 @@ public class HashMap<K, V> implements Map<K, V>{
         n = n | n >>> 16;
 
         if(n < 0) return 1;
-        if(n > MAXIMUM_CAPACITY) return MAXIMUM_CAPACITY;
-        return n +1;
+        return Math.min(n +1, MAXIMUM_CAPACITY);
     }
 
     private int getHashCode(K key) {
